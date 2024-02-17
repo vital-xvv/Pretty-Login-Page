@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 100;
+}
+
+.nav {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav_link, .nav_logo, .button {
+    color: #fff;
+}
+
+.nav, .nav_item{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav_logo{
+    font-size: 25px;
+}
+
+.nav_item {
+    column-gap: 25px;
+
+}
+
+.nav_link:hover {
+    color: aqua;
+}
+
+.button {
+    padding: 6px 24px;
+    border: 2px solid #fff;
+    background: transparent;
+    cursor: pointer;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+/*Home*/
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("./resources/backiee-247425.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.form_container {
+    position: absolute;
+    max-width: 320px;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: rgba(0,0,0,0.1);
+}
+
+.form_close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #0b0217;
+    font-size: 22px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.form_container h2 {
+    font-size: 22px;
+    color: #0b0217;
+    text-align: center;
+}
+
+.input_box {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+}
+
+.input_box input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 30px;
+    color: #333;
+    border-bottom: 1.5px solid #aaa;
+}
+
+.input_box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.input_box i.email,
+.input_box i.password {
+    left: 0;
+    color: #707070;
+}
